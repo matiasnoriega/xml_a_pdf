@@ -11,7 +11,7 @@ foreach($simbolos as $simbolo){
     $html.= '<table style="width:50%; border:1px solid black">';
     
     $html.= '<tr><td style="width:100%; border:1px solid black; text-align: center"><h1>'. htmlentities($simbolo->nombreSimbolo). '</h1></td></tr>';
-    $html.= '<tr><td style="width:100%; border:1px solid black; padding: 2%"><strong>Nociones:</strong><br><ul>';
+    $html.= '<tr><td style="width:100%; border:1px solid black; padding: 2%"><strong>Noci&oacute;n:</strong><br><ul>';
 
     foreach($simbolo->Nociones->Nocion as $nocion){
         $html.= '<li>'.htmlentities($nocion).'</li>';
